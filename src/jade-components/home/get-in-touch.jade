@@ -1,0 +1,85 @@
+// get-in touch contact form 
+
+section.get-in-touch
+	.container
+		include ../comman/section-intro.jade
+		+section-intro("We want to hear from you", "Don't step back. It's your right to know if we're good for you. We'd be more than happy and waiting to offer our services for you.")
+
+		.contact-form
+			form.clearfix.text-center(data-toggle="validator" role="form")
+				.col-sm-4
+					span.input.input--kohana.form-group
+						input.input__field.input__field--kohana#fullname(type="text" data-error='Enter full name' name='fullname' required)
+						label.input__label.input__label--kohana(for="fullname")
+							i.bonito-name.icon.icon--kohana
+							span.input__label-content.input__label-content--kohana Full name
+						.help-block.with-errors.form-group__error
+				.col-sm-4
+					span.input.input--kohana.form-group
+						input.input__field.input__field--kohana#email(type="email", name='email', required data-error='Enter email address')
+						label.input__label.input__label--kohana(for="email")
+							i.bonito-mail.icon.icon--kohana(aria-hidden="true")
+							span.input__label-content.input__label-content--kohana yashna@bonito.in
+						.help-block.with-errors.form-group__error
+				.col-sm-4
+					span.input.input--kohana.form-group
+						input.input__field.input__field--kohana#contactnumber(type="number",name='contactnumber', required data-error='Enter contact number', maxlength='10')
+						label.input__label.input__label--kohana(for="contactnumber")
+							i.bonito-contact.icon.icon--kohana
+							span.input__label-content.input__label-content--kohana Contact Number
+						.help-block.with-errors.form-group__error
+				//2nd row			
+				.col-sm-4
+					span.input.input--kohana.form-group
+						input.input__field.input__field--kohana#contactnumber(type="text",name='projecttype')
+						label.input__label.input__label--kohana(for="projecttype")
+							i.bonito-flat-name.icon.icon--kohana
+							span.input__label-content.input__label-content--kohana Project Type
+						
+				.col-sm-4
+					span.input.input--kohana.form-group
+						input.input__field.input__field--kohana#floor(type="text", name='floor', required)
+						label.input__label.input__label--kohana(for="floor")
+							i.bonito-floor-area.icon.icon--kohana
+							span.input__label-content.input__label-content--kohana Floor Area (sq. ft)
+						
+			
+				.col-sm-4
+					span.input.input--kohana.form-group
+						//span.input__down-arrow.fa.fa-caret-down
+						select.input__field.input__field--kohana.selectpicker#apartment(required, name='apartment',data-container="body", data-live-search="true") Apartment Type
+							option(disabled) Apartment Type
+							option 1
+							option 2
+							option 3
+							option 4
+						
+				.col-sm-6
+					span.input.input--kohana.form-group
+						//span.input__down-arrow.fa.fa-caret-down
+						select.input__field.input__field--kohana.selectpicker#locality(required, name='locality', data-container="body") Locality of your project
+							option(disabled) Locality of your project
+							option 1
+							option 2
+						
+						.help-block.with-errors.form-group__error
+
+				.col-sm-6
+					span.input.input--kohana.form-group.input--file
+						//- input.input__field.input__field--kohana.input__field--file#floorplan(type="file", name='floorplan')
+						//- label.input__label.input__label--kohana.input__field--file-label1(for="floorplan")
+						//- 	//i.bonito-floor-plan.icon.icon--kohana
+						//- 	span.input__label-content.input__label-content--kohanaa.input__field--file-label  Upload file(s)
+						.custom-file-upload
+							// <label for="file">File: </label>
+							input#project-file(type='file', name='project-type')
+						
+				.col-sm-12
+					span.input.input--kohana.form-group
+						input.input__field.input__field--kohana#leavemessage(type="text", name='leavemessage')
+						label.input__label.input__label--kohana(for="leavemessage")
+							i.bonito-leave-message.icon.icon--kohana
+							span.input__label-content.input__label-content--kohana Leave your message here..
+						
+				.col-sm-12
+					button(type='submit').button-default.button-default--about-bonito.button-default--submit submit

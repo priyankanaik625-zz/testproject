@@ -1,0 +1,147 @@
+.about-us-container {
+	padding: 30px 0;
+	margin-top: 70px;
+
+	@media(min-width: 768px) {
+		padding: 50px 0px;
+	}
+
+	@media(min-width: 992px) {
+		padding: 70px 0px;
+	}
+	
+	.rectangular-border-bottom-right {
+		border:none;
+	}
+
+}
+
+.rectangular-border-bottom-right{
+
+	&--about-us-banner {
+		width: calc(100% - 55px);
+		left: 55px;
+
+		@media(min-width: 768px) {
+			width: calc(100% - 175px);
+			left: 175px;
+		}
+		@media(min-width: 992px) {
+			width: calc(100% - 215px);
+			left: 215px;
+		}
+		@media(min-width: 1200px) {
+			// width: calc(100% - 275px);
+			// left: 275px;
+
+			width: calc(100% - 250px);
+			left: 220px;
+			top: 35px;
+		}
+	}
+}
+
+#out-team.our-story{
+		
+		padding-bottom: 0px;
+	
+	&--about-us {
+		
+		p {
+			display: block;
+		}
+	}
+
+	&__image {
+		padding: 0 25px;
+
+		@media(min-width: 768px) {
+			padding: 0 35px;
+		}
+	}
+}
+
+.our-team-slider {
+	.slick-dots {
+		bottom: -25px;
+		position: relative;
+		text-align: center;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	h2 {
+		font-size: 18px;
+
+		@media(min-width: 1200px) {
+			font-size: 25px;
+		}
+	}
+
+	span {
+		font-size: 12px;
+		@media(min-width: 768px) {
+			font-size: 18px;
+		}
+		@media(min-width: 1200px) {
+			font-size: 20px;
+			max-width: 700px;
+			margin: 0 auto;
+			line-height: 35px;
+		}
+	}
+
+}
+
+.button-default{
+
+	&--about-us {
+		// margin-top: 40px;
+		//margin-left: 20px;
+		@media(min-width: 768px) {
+			margin-left: 60px;
+
+		}
+
+		@media(min-width: 1200px) {
+			margin-left: 0px;
+		}
+	}
+}
+
+// .section-intro__info.section-intro__info--cr-design {
+// 	text-align: left;
+// 	@media(min-width: 750px) {
+// 			max-width: 640px;
+
+// 	}
+// 	@media(min-width: 992px) {
+// 			max-width: 800px;
+// 	}
+// }
+
+
+.designer-profile-container{
+	&--about-us {
+		padding: 0px;
+		margin-top: 0px;
+	}
+}
+
+// .about-us-video-banner {
+// 	border-radius: 50%;
+// 	transition: all 400ms ease-in-out;
+// 	&:hover {
+// 		background-color: #00355f;
+// 	}
+// }
+
+#career.career {
+	padding-top: 100px;
+	@media(min-width: 1200px) {
+		padding-top: 100px;
+	}
+
+}

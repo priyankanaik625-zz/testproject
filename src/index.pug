@@ -1,0 +1,86 @@
+doctype html
+head
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1")
+	meta(http-equiv="x-ua-compatible" content="IE=10")
+	meta(name="theme-color" content="#00355f")
+	title Bonito - Home 
+	link(rel="stylesheet", href="css/main.css")
+	link( rel ='icon' href="img/12-fav-icon.png", alt="bonito favicon")
+
+body
+	
+	//START: Header
+	include jade-components/base/header-nav
+	//START: Main
+	main
+		include jade-components/home/banner-slider
+		
+		//about bonito section
+		
+		include jade-components/home/about-bonito
+
+		//our services seciton
+
+		include jade-components/home/our-services
+
+		//our work section
+		include jade-components/home/our-work.jade
+
+		// our-clients
+
+		include jade-components/home/our-clients
+
+		// our-story
+
+		include jade-components/home/our-story
+				
+		//abou-tus videos section
+
+		include jade-components/home/about-us-videos.jade
+		
+		//our blog section
+
+		include jade-components/home/our-blog.jade
+
+		//get-in-touch
+	
+		include jade-components/home/get-in-touch.jade
+	//START: Footer
+	include jade-components/base/footer.jade
+	//START: Plugins Scripts
+	script(src="js/plugins/jquery.min.js")
+	script(src="js/plugins/bootstrap.min.js")
+	script(src="js/plugins/aos.js")
+	script(src="js/plugins/jquery.stellar.min.js")
+	script(src="js/plugins/SmoothScroll.js")
+	script(src="js/plugins/jquery.magnific-popup.min.js")
+	script(src="js/plugins/slick.min.js")
+	script(src="js/plugins/classie.js")  	
+	script(src="js/bootstrap-select.js")
+	script(src='js/plugins/jquery.waypoints.min.js')
+	script(src="js/plugins/vivus.min.js")
+
+	script(src="js/vivus-initialization.js")
+
+	script(src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js")
+	script(src="js/plugins/masonry.pkgd.min.js")
+	script(src="js/masonry-initialization.js")
+	//START: Custom Scripts
+	script(src="js/header.js")
+	script(src="js/client-slider.js")
+	script(src="js/banner-slider.js")
+	script(src="js/parallax-image.js")
+	script(src="js/video-modal-popup.js")
+	script(src="js/text-input-form-animation.js")
+	script(src="js/validator.js")
+	script(src="js/vivus-initialization.js")
+	script(src="js/custom-file-upload.js")
+	//-script(src="js/plugins/main.js")
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+//our story
+
+.our-story{
+	@include sectionPadding;
+	&-banner{
+		margin-top: 45px;
+		@media(min-width:768px){
+			margin-top: 70px;
+		}
+	}
+}
+
+//.our-story-banner {     margin-top: 0px; }
+
+.white-patch{
+	&--out-story {
+		margin-top: -40px;
+	}
+
+}
+.our-story-banner {
+	background-size: cover;
+}

@@ -1,0 +1,13 @@
+.categories{
+	.ps-container>.ps-scrollbar-x-rail {
+		height: 3px;
+		display: none;
+	}
+	.ps-container:hover>.ps-scrollbar-x-rail:hover>.ps-scrollbar-x,
+	.ps-container>.ps-scrollbar-x-rail>.ps-scrollbar-x{
+		background-color: #00355f !important;
+		height: 3px;
+		display: none;
+	}
+
+}

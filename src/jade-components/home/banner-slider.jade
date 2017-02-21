@@ -1,0 +1,21 @@
+.banner-slider
+
+	.banner-slider-wraper
+		.banner-slider__img-wraper
+			ul.carousel-inner(role="listbox")
+				li.item.active
+					img.banner-slider__img
+						
+				li.item
+					img.banner-slider__img
+
+				li.item
+					img.banner-slider__img
+
+			.rectangular-border-banner
+				//svg#my-svg.my-svg(width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none")
+					rect(width="100%" height="100%" style="fill:transparent;stroke:#191616;stroke-width:0.4")
+				object#my-svg.my-svg(type="image/svg+xml" data="img/home-line-rect.svg")
+			.banner-slider__content
+				span.banner-slider__info(data-aos="fade-down"  data-aos-duration="800" data-aos-delay="200") Welcome to Bonito- 
+				h1.banner-slider__heading(data-aos="fade-right" data-aos-duration="800",  data-aos-delay="1000") INTERIOR DESIGN STUDIO

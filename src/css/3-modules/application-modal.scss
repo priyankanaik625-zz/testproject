@@ -1,0 +1,97 @@
+// #application-modal {
+// 	display: block !important;
+// }
+
+
+.application-modal {
+
+	&__dialog {
+		width: auto;
+		
+		@media(min-width: 560px) {
+
+			width: 510px;
+			margin: 30px auto;
+		}
+	}
+
+	&__content {
+		box-shadow: none;
+		border-radius: 0px;
+	}
+
+	&__close {
+		position: absolute;
+		right: 10px;
+
+		@media(min-width: 1200px) {
+			right: -35px;
+			color: #fff;
+			opacity: 1;
+			top: 0px;
+		}
+		i.fa {
+			font-size: 25px;
+			position: relative;
+		}
+	}
+
+	&__title {
+		font-family: 'Monteserrat-Bold',serif;
+		font-size: 16px;
+		color: $dark-blue;
+		@media(min-width: 768px) {
+			font-size: 18px;
+		}
+		@media(min-width: 1200px) {
+			margin-left: 40px;
+			font-size: 20px;
+		}
+		
+	}
+
+	&__sub-title {
+		font-family: 'Monteserrat-Regular',serif;
+		font-size: 16px;
+
+	}
+
+	&__info {
+		font-size: 14px;
+		font-family: 'Lato-Regular',serif;
+		color: #333;
+		@media(min-width: 768px) {
+			font-size: 16px;
+		}
+		@media(min-width: 1200px) {
+			margin-left: 40px;
+			font-size: 18px;
+		}
+	}
+}
+
+.application-modal-form {
+	
+	@media(min-width: 1200px) {
+		margin: 20px 40px;
+	}
+
+	&__input {
+		width: 100%;
+		border: 1px solid #e7e7e7;
+		color: #999999;
+		font-size: 16px;
+		font-family: 'Lato-Regular',serif;
+		padding: 15px 0px 15px 20px;
+		&:focus,
+		&:active {
+			outline: #e7e7e7;
+		}
+	}
+}
+
+.button-default{
+	&--submit-sm {
+		background-color: transparent;
+	}
+}

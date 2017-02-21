@@ -1,0 +1,44 @@
+header
+   nav.navbar.navbar-default.navbar-fixed-top#bnt-header-menu
+      .container
+         .navbar-header
+            button.navbar-toggle.collapsed.navbar-btn#nav-icon3(type="button" data-toggle="collapse" data-target="#")
+               //- span.sr-only Toggle navigation
+               span.icon-bar.top-bar
+               span.icon-bar.middle-bar
+               span.icon-bar.bottom-bar
+               span.icon-bar.bottom-bar
+            a.navbar-brand(href="index.html")
+               img.logo-blue(src="img/logo.png" alt="Brand logo")
+               img.logo-white(src="img/logo-white.png" alt="Brand logo")
+
+         .collapse.navbar-collapse#active-navbar
+            ul.nav.navbar-nav.navbar-right.nav-right--list
+               li.nav-right--list__item.dropdown
+
+                  a.dropdown-toggle about us
+
+                  ul.dropdown-list
+                     li.dropdown-list__item
+                        a( tabindex="-1" href="about-us.html") Our Methodology
+                     li.dropdown-list__item
+                        a( tabindex="-1" href="testimonials.html") Testimonials
+                     li.dropdown-list__item
+                        a( tabindex="-1" href="services.html") Services
+
+               li.nav-right--list__item.dropdown
+                  a.dropdown-toggle Portfolio
+                  ul.dropdown-list
+                     li.dropdown-list__item
+                        a( tabindex="-1" href="portfolio.html") All projects
+                     li.dropdown-list__item
+                        a( tabindex="-1" href="case-studies.html") Case Studies
+                     li.dropdown-list__item
+                        a( tabindex="-1" href="videos.html") Videos
+
+               li.nav-right--list__item
+                  a(href="blog.html") Blog
+               li.nav-right--list__item
+                  a(href="contact-us.html") Contact Us
+               li.nav-right--list__item
+                  a(href="#") Squadro

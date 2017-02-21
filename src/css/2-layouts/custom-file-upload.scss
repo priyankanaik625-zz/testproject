@@ -1,0 +1,94 @@
+$background: #e74c3c;
+$file-upload-color: #c0392b;
+$file-upload-size: 300px;
+
+.custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+.custom-file-upload {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    width: 100%;
+    //margin-top: 30px;
+    //border: 1px solid #ccc;
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.file-upload-wrapper {
+    position: relative; 
+    margin-bottom: 5px;
+    //border: 1px solid #ccc;
+}
+.file-upload-input {
+    //width: $file-upload-size;
+    color: #666;
+    width: 50%;
+    font-size: 16px;
+    padding: 9px 17px 9px 5px;
+    border: 0px;
+    border-bottom: 1px solid #333;
+    //background-color: #00355f; 
+    @include transition(all 0.2s ease-in); 
+    float: left; /* IE 9 Fix */
+    &:focus { 
+        background-color: #fff;
+        outline: none; 
+    }
+
+    @media(min-width: 370px) {
+        width: 60%;
+    }
+    @media(min-width: 600px) {
+        width: 70%;
+    }
+    @media(min-width: 768px) {
+        width: 60%;
+        padding: 10px 17px 10px 5px;
+    }
+    @media(min-width: 992px) {
+        padding-top: 13px;
+        width: 65%;
+    }
+}
+.file-upload-button {
+    cursor: pointer; 
+    width: 50%;
+    display: inline-block; 
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px; 
+    border: none;
+    margin-left: -1px; 
+    background-color: #00355f;
+    &:focus{
+        outline: none;
+    }
+    //background-color: darken($file-upload-color, 10); 
+    float: left; /* IE 9 Fix */
+    @include transition(all 0.2s ease-in);
+
+    @media(min-width: 370px) {
+        width: 40%;
+    }
+    @media(min-width: 600px) {
+        width: 30%;
+    }
+    @media(min-width: 768px) {
+        width: 40%;
+        font-size: 14px;
+    }
+     @media(min-width: 992px) {
+        //padding: 14px;
+        width: 35%;
+        font-size: 16px;
+    }
+    
+}
